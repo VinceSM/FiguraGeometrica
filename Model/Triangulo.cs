@@ -13,23 +13,6 @@ namespace FiguraGeometrica2.Model
         decimal lado2;
         decimal lado3;
 
-        public decimal Lado1
-        {
-            get { return lado1; } 
-            set { lado1 = value; } 
-        }
-
-        public decimal Lado2
-        {
-            get { return lado2; } 
-            set { lado2 = value; } 
-        }
-
-        public decimal Lado3
-        {
-            get { return lado3; } 
-            set { lado3 = value; } 
-        }
         public Triangulo(decimal lado1, decimal lado2, decimal lado3)
         {
             this.lado1 = lado1;

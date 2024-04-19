@@ -10,6 +10,11 @@ namespace FiguraGeometrica2.Model
     internal class Cuadrado : IFigura
     {
         decimal lado;
+
+        public Cuadrado(decimal lado)
+        { this.lado = lado; }
+
+
         public decimal CalcularArea()
         {
             return lado * lado;

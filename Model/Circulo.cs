@@ -12,6 +12,11 @@ namespace FiguraGeometrica2.Model
     {
         double radio;
 
+        public Circulo(double radio) 
+        {
+            this.radio = radio;
+        }
+
         public decimal CalcularArea()
         {
             var a = (decimal)(Math.PI * Math.Pow(radio, 2));
