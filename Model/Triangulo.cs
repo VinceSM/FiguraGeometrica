@@ -31,7 +31,8 @@ namespace FiguraGeometrica2.Model
             else
             {
                 decimal s = (lado1 + lado2 + lado3) / 2; // Semiperímetro
-                return (decimal)Math.Sqrt((double)(s * (s - lado1) * (s - lado2) * (s - lado3)));
+                decimal area = (decimal)Math.Sqrt((double)(s * (s - lado1) * (s - lado2) * (s - lado3)));
+                return area;
             }
         }
 
@@ -50,7 +51,6 @@ namespace FiguraGeometrica2.Model
             }
             else 
             {
-                //Si el triangulo no es equilatero
                 decimal s = (lado1 + lado2 + lado3) / 2; // Semiperímetro
                 decimal area = 
                     (decimal)Math.Sqrt((double)(s * (s - lado1) * (s - lado2) * (s - lado3)));

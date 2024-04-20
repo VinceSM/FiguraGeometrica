@@ -41,6 +41,12 @@
             this.txtResArea = new System.Windows.Forms.TextBox();
             this.txtResPerimetro = new System.Windows.Forms.TextBox();
             this.txtResAltura = new System.Windows.Forms.TextBox();
+            this.lblLado1 = new System.Windows.Forms.Label();
+            this.lblLado2 = new System.Windows.Forms.Label();
+            this.lblLado3 = new System.Windows.Forms.Label();
+            this.txtLado1 = new System.Windows.Forms.TextBox();
+            this.txtLado2 = new System.Windows.Forms.TextBox();
+            this.txtLado3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnCuadrado
@@ -76,7 +82,7 @@
             // lblArea
             // 
             this.lblArea.AutoSize = true;
-            this.lblArea.Location = new System.Drawing.Point(254, 30);
+            this.lblArea.Location = new System.Drawing.Point(215, 30);
             this.lblArea.Name = "lblArea";
             this.lblArea.Size = new System.Drawing.Size(36, 13);
             this.lblArea.TabIndex = 3;
@@ -85,7 +91,7 @@
             // lblPerimetro
             // 
             this.lblPerimetro.AutoSize = true;
-            this.lblPerimetro.Location = new System.Drawing.Point(371, 30);
+            this.lblPerimetro.Location = new System.Drawing.Point(215, 69);
             this.lblPerimetro.Name = "lblPerimetro";
             this.lblPerimetro.Size = new System.Drawing.Size(71, 13);
             this.lblPerimetro.TabIndex = 4;
@@ -94,7 +100,7 @@
             // lblAltura
             // 
             this.lblAltura.AutoSize = true;
-            this.lblAltura.Location = new System.Drawing.Point(506, 30);
+            this.lblAltura.Location = new System.Drawing.Point(215, 108);
             this.lblAltura.Name = "lblAltura";
             this.lblAltura.Size = new System.Drawing.Size(50, 13);
             this.lblAltura.TabIndex = 5;
@@ -106,7 +112,7 @@
             // lblRadio
             // 
             this.lblRadio.AutoSize = true;
-            this.lblRadio.Location = new System.Drawing.Point(13, 168);
+            this.lblRadio.Location = new System.Drawing.Point(16, 208);
             this.lblRadio.Name = "lblRadio";
             this.lblRadio.Size = new System.Drawing.Size(41, 13);
             this.lblRadio.TabIndex = 6;
@@ -117,7 +123,7 @@
             // 
             // txtRadio
             // 
-            this.txtRadio.Location = new System.Drawing.Point(71, 168);
+            this.txtRadio.Location = new System.Drawing.Point(71, 201);
             this.txtRadio.Name = "txtRadio";
             this.txtRadio.Size = new System.Drawing.Size(100, 20);
             this.txtRadio.TabIndex = 7;
@@ -128,7 +134,7 @@
             // lblLadoC
             // 
             this.lblLadoC.AutoSize = true;
-            this.lblLadoC.Location = new System.Drawing.Point(16, 138);
+            this.lblLadoC.Location = new System.Drawing.Point(16, 174);
             this.lblLadoC.Name = "lblLadoC";
             this.lblLadoC.Size = new System.Drawing.Size(36, 13);
             this.lblLadoC.TabIndex = 8;
@@ -139,7 +145,7 @@
             // 
             // txtLadoC
             // 
-            this.txtLadoC.Location = new System.Drawing.Point(71, 138);
+            this.txtLadoC.Location = new System.Drawing.Point(71, 167);
             this.txtLadoC.Name = "txtLadoC";
             this.txtLadoC.Size = new System.Drawing.Size(100, 20);
             this.txtLadoC.TabIndex = 9;
@@ -149,36 +155,114 @@
             // 
             // txtResArea
             // 
-            this.txtResArea.Location = new System.Drawing.Point(231, 62);
+            this.txtResArea.Location = new System.Drawing.Point(304, 23);
             this.txtResArea.Name = "txtResArea";
             this.txtResArea.ReadOnly = true;
-            this.txtResArea.Size = new System.Drawing.Size(81, 20);
+            this.txtResArea.Size = new System.Drawing.Size(149, 20);
             this.txtResArea.TabIndex = 12;
             this.txtResArea.VisibleChanged += new System.EventHandler(this.Form1_Load);
             // 
             // txtResPerimetro
             // 
-            this.txtResPerimetro.Location = new System.Drawing.Point(367, 61);
+            this.txtResPerimetro.Location = new System.Drawing.Point(304, 66);
             this.txtResPerimetro.Name = "txtResPerimetro";
             this.txtResPerimetro.ReadOnly = true;
-            this.txtResPerimetro.Size = new System.Drawing.Size(75, 20);
+            this.txtResPerimetro.Size = new System.Drawing.Size(149, 20);
             this.txtResPerimetro.TabIndex = 13;
             this.txtResPerimetro.VisibleChanged += new System.EventHandler(this.Form1_Load);
             // 
             // txtResAltura
             // 
-            this.txtResAltura.Location = new System.Drawing.Point(492, 62);
+            this.txtResAltura.Location = new System.Drawing.Point(304, 105);
             this.txtResAltura.Name = "txtResAltura";
             this.txtResAltura.ReadOnly = true;
-            this.txtResAltura.Size = new System.Drawing.Size(74, 20);
+            this.txtResAltura.Size = new System.Drawing.Size(149, 20);
             this.txtResAltura.TabIndex = 14;
             this.txtResAltura.Visible = false;
             this.txtResAltura.TextChanged += new System.EventHandler(this.txtResAltura_TextChanged);
             this.txtResAltura.VisibleChanged += new System.EventHandler(this.btnTriangulo_Click);
             // 
+            // lblLado1
+            // 
+            this.lblLado1.AutoSize = true;
+            this.lblLado1.Location = new System.Drawing.Point(16, 247);
+            this.lblLado1.Name = "lblLado1";
+            this.lblLado1.Size = new System.Drawing.Size(45, 13);
+            this.lblLado1.TabIndex = 15;
+            this.lblLado1.Text = "LADO 1";
+            this.lblLado1.Visible = false;
+            this.lblLado1.VisibleChanged += new System.EventHandler(this.btnTriangulo_Click);
+            this.lblLado1.Click += new System.EventHandler(this.lblLado1_Click);
+            // 
+            // lblLado2
+            // 
+            this.lblLado2.AutoSize = true;
+            this.lblLado2.Location = new System.Drawing.Point(16, 279);
+            this.lblLado2.Name = "lblLado2";
+            this.lblLado2.Size = new System.Drawing.Size(45, 13);
+            this.lblLado2.TabIndex = 16;
+            this.lblLado2.Text = "LADO 2";
+            this.lblLado2.Visible = false;
+            this.lblLado2.VisibleChanged += new System.EventHandler(this.btnTriangulo_Click);
+            this.lblLado2.Click += new System.EventHandler(this.lblLado2_Click);
+            // 
+            // lblLado3
+            // 
+            this.lblLado3.AutoSize = true;
+            this.lblLado3.Location = new System.Drawing.Point(16, 309);
+            this.lblLado3.Name = "lblLado3";
+            this.lblLado3.Size = new System.Drawing.Size(45, 13);
+            this.lblLado3.TabIndex = 17;
+            this.lblLado3.Text = "LADO 3";
+            this.lblLado3.Visible = false;
+            this.lblLado3.VisibleChanged += new System.EventHandler(this.btnTriangulo_Click);
+            this.lblLado3.Click += new System.EventHandler(this.lblLado3_Click);
+            // 
+            // txtLado1
+            // 
+            this.txtLado1.Location = new System.Drawing.Point(71, 247);
+            this.txtLado1.Name = "txtLado1";
+            this.txtLado1.Size = new System.Drawing.Size(100, 20);
+            this.txtLado1.TabIndex = 18;
+            this.txtLado1.Visible = false;
+            this.txtLado1.TextChanged += new System.EventHandler(this.txtLado1_TextChanged);
+            this.txtLado1.VisibleChanged += new System.EventHandler(this.btnTriangulo_Click);
+            this.txtLado1.Enter += new System.EventHandler(this.Form1_Load);
+            this.txtLado1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLado1_KeyDown);
+            // 
+            // txtLado2
+            // 
+            this.txtLado2.Location = new System.Drawing.Point(71, 279);
+            this.txtLado2.Name = "txtLado2";
+            this.txtLado2.Size = new System.Drawing.Size(100, 20);
+            this.txtLado2.TabIndex = 19;
+            this.txtLado2.Visible = false;
+            this.txtLado2.TextChanged += new System.EventHandler(this.txtLado2_TextChanged);
+            this.txtLado2.VisibleChanged += new System.EventHandler(this.btnTriangulo_Click);
+            this.txtLado2.Enter += new System.EventHandler(this.Form1_Load);
+            this.txtLado2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLado2_KeyDown);
+            // 
+            // txtLado3
+            // 
+            this.txtLado3.Location = new System.Drawing.Point(71, 309);
+            this.txtLado3.Name = "txtLado3";
+            this.txtLado3.Size = new System.Drawing.Size(100, 20);
+            this.txtLado3.TabIndex = 20;
+            this.txtLado3.Visible = false;
+            this.txtLado3.TextChanged += new System.EventHandler(this.txtLado3_TextChanged);
+            this.txtLado3.VisibleChanged += new System.EventHandler(this.btnTriangulo_Click);
+            this.txtLado3.Enter += new System.EventHandler(this.Form1_Load);
+            this.txtLado3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLado3_KeyDown);
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(667, 398);
+            this.Controls.Add(this.txtLado3);
+            this.Controls.Add(this.txtLado2);
+            this.Controls.Add(this.txtLado1);
+            this.Controls.Add(this.lblLado3);
+            this.Controls.Add(this.lblLado2);
+            this.Controls.Add(this.lblLado1);
             this.Controls.Add(this.txtResAltura);
             this.Controls.Add(this.txtResPerimetro);
             this.Controls.Add(this.txtResArea);
@@ -220,6 +304,12 @@
         private System.Windows.Forms.TextBox txtResArea;
         private System.Windows.Forms.TextBox txtResPerimetro;
         private System.Windows.Forms.TextBox txtResAltura;
+        private System.Windows.Forms.Label lblLado1;
+        private System.Windows.Forms.Label lblLado2;
+        private System.Windows.Forms.Label lblLado3;
+        private System.Windows.Forms.TextBox txtLado1;
+        private System.Windows.Forms.TextBox txtLado2;
+        private System.Windows.Forms.TextBox txtLado3;
     }
 }
 
