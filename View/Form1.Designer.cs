@@ -100,58 +100,58 @@
             // lblAltura
             // 
             this.lblAltura.AutoSize = true;
+            this.lblAltura.Enabled = false;
             this.lblAltura.Location = new System.Drawing.Point(215, 108);
             this.lblAltura.Name = "lblAltura";
             this.lblAltura.Size = new System.Drawing.Size(50, 13);
             this.lblAltura.TabIndex = 5;
             this.lblAltura.Text = "ALTURA";
-            this.lblAltura.Visible = false;
-            this.lblAltura.VisibleChanged += new System.EventHandler(this.btnTriangulo_Click);
+            this.lblAltura.EnabledChanged += new System.EventHandler(this.btnTriangulo_Click);
             this.lblAltura.Click += new System.EventHandler(this.lblAltura_Click);
             // 
             // lblRadio
             // 
             this.lblRadio.AutoSize = true;
+            this.lblRadio.Enabled = false;
             this.lblRadio.Location = new System.Drawing.Point(16, 208);
             this.lblRadio.Name = "lblRadio";
             this.lblRadio.Size = new System.Drawing.Size(41, 13);
             this.lblRadio.TabIndex = 6;
             this.lblRadio.Text = "RADIO";
-            this.lblRadio.Visible = false;
-            this.lblRadio.VisibleChanged += new System.EventHandler(this.btnCirculo_Click);
+            this.lblRadio.EnabledChanged += new System.EventHandler(this.btnCirculo_Click);
             this.lblRadio.Click += new System.EventHandler(this.lblRadio_Click);
             // 
             // txtRadio
             // 
+            this.txtRadio.Enabled = false;
             this.txtRadio.Location = new System.Drawing.Point(71, 201);
             this.txtRadio.Name = "txtRadio";
             this.txtRadio.Size = new System.Drawing.Size(100, 20);
             this.txtRadio.TabIndex = 7;
-            this.txtRadio.Visible = false;
+            this.txtRadio.EnabledChanged += new System.EventHandler(this.btnCirculo_Click);
             this.txtRadio.TextChanged += new System.EventHandler(this.txtRadio_TextChanged);
-            this.txtRadio.VisibleChanged += new System.EventHandler(this.btnCirculo_Click);
             // 
             // lblLadoC
             // 
             this.lblLadoC.AutoSize = true;
+            this.lblLadoC.Enabled = false;
             this.lblLadoC.Location = new System.Drawing.Point(16, 174);
             this.lblLadoC.Name = "lblLadoC";
-            this.lblLadoC.Size = new System.Drawing.Size(36, 13);
+            this.lblLadoC.Size = new System.Drawing.Size(46, 13);
             this.lblLadoC.TabIndex = 8;
-            this.lblLadoC.Text = "LADO";
-            this.lblLadoC.Visible = false;
-            this.lblLadoC.VisibleChanged += new System.EventHandler(this.btnCuadrado_Click);
+            this.lblLadoC.Text = "LADO C";
+            this.lblLadoC.EnabledChanged += new System.EventHandler(this.btnCuadrado_Click);
             this.lblLadoC.Click += new System.EventHandler(this.lblLadoC_Click);
             // 
             // txtLadoC
             // 
+            this.txtLadoC.Enabled = false;
             this.txtLadoC.Location = new System.Drawing.Point(71, 167);
             this.txtLadoC.Name = "txtLadoC";
             this.txtLadoC.Size = new System.Drawing.Size(100, 20);
             this.txtLadoC.TabIndex = 9;
-            this.txtLadoC.Visible = false;
+            this.txtLadoC.EnabledChanged += new System.EventHandler(this.btnCuadrado_Click);
             this.txtLadoC.TextChanged += new System.EventHandler(this.txtLadoC_TextChanged);
-            this.txtLadoC.VisibleChanged += new System.EventHandler(this.btnCuadrado_Click);
             // 
             // txtResArea
             // 
@@ -173,84 +173,84 @@
             // 
             // txtResAltura
             // 
+            this.txtResAltura.Enabled = false;
             this.txtResAltura.Location = new System.Drawing.Point(304, 105);
             this.txtResAltura.Name = "txtResAltura";
             this.txtResAltura.ReadOnly = true;
             this.txtResAltura.Size = new System.Drawing.Size(149, 20);
             this.txtResAltura.TabIndex = 14;
-            this.txtResAltura.Visible = false;
+            this.txtResAltura.EnabledChanged += new System.EventHandler(this.btnTriangulo_Click);
             this.txtResAltura.TextChanged += new System.EventHandler(this.txtResAltura_TextChanged);
-            this.txtResAltura.VisibleChanged += new System.EventHandler(this.btnTriangulo_Click);
             // 
             // lblLado1
             // 
             this.lblLado1.AutoSize = true;
+            this.lblLado1.Enabled = false;
             this.lblLado1.Location = new System.Drawing.Point(16, 247);
             this.lblLado1.Name = "lblLado1";
             this.lblLado1.Size = new System.Drawing.Size(45, 13);
             this.lblLado1.TabIndex = 15;
             this.lblLado1.Text = "LADO 1";
-            this.lblLado1.Visible = false;
-            this.lblLado1.VisibleChanged += new System.EventHandler(this.btnTriangulo_Click);
+            this.lblLado1.EnabledChanged += new System.EventHandler(this.btnTriangulo_Click);
             this.lblLado1.Click += new System.EventHandler(this.lblLado1_Click);
             // 
             // lblLado2
             // 
             this.lblLado2.AutoSize = true;
+            this.lblLado2.Enabled = false;
             this.lblLado2.Location = new System.Drawing.Point(16, 279);
             this.lblLado2.Name = "lblLado2";
             this.lblLado2.Size = new System.Drawing.Size(45, 13);
             this.lblLado2.TabIndex = 16;
             this.lblLado2.Text = "LADO 2";
-            this.lblLado2.Visible = false;
-            this.lblLado2.VisibleChanged += new System.EventHandler(this.btnTriangulo_Click);
+            this.lblLado2.EnabledChanged += new System.EventHandler(this.btnTriangulo_Click);
             this.lblLado2.Click += new System.EventHandler(this.lblLado2_Click);
             // 
             // lblLado3
             // 
             this.lblLado3.AutoSize = true;
+            this.lblLado3.Enabled = false;
             this.lblLado3.Location = new System.Drawing.Point(16, 309);
             this.lblLado3.Name = "lblLado3";
             this.lblLado3.Size = new System.Drawing.Size(45, 13);
             this.lblLado3.TabIndex = 17;
             this.lblLado3.Text = "LADO 3";
-            this.lblLado3.Visible = false;
-            this.lblLado3.VisibleChanged += new System.EventHandler(this.btnTriangulo_Click);
+            this.lblLado3.EnabledChanged += new System.EventHandler(this.btnTriangulo_Click);
             this.lblLado3.Click += new System.EventHandler(this.lblLado3_Click);
             // 
             // txtLado1
             // 
+            this.txtLado1.Enabled = false;
             this.txtLado1.Location = new System.Drawing.Point(71, 247);
             this.txtLado1.Name = "txtLado1";
             this.txtLado1.Size = new System.Drawing.Size(100, 20);
             this.txtLado1.TabIndex = 18;
-            this.txtLado1.Visible = false;
+            this.txtLado1.EnabledChanged += new System.EventHandler(this.btnTriangulo_Click);
             this.txtLado1.TextChanged += new System.EventHandler(this.txtLado1_TextChanged);
-            this.txtLado1.VisibleChanged += new System.EventHandler(this.btnTriangulo_Click);
             this.txtLado1.Enter += new System.EventHandler(this.Form1_Load);
             this.txtLado1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLado1_KeyDown);
             // 
             // txtLado2
             // 
+            this.txtLado2.Enabled = false;
             this.txtLado2.Location = new System.Drawing.Point(71, 279);
             this.txtLado2.Name = "txtLado2";
             this.txtLado2.Size = new System.Drawing.Size(100, 20);
             this.txtLado2.TabIndex = 19;
-            this.txtLado2.Visible = false;
+            this.txtLado2.EnabledChanged += new System.EventHandler(this.btnTriangulo_Click);
             this.txtLado2.TextChanged += new System.EventHandler(this.txtLado2_TextChanged);
-            this.txtLado2.VisibleChanged += new System.EventHandler(this.btnTriangulo_Click);
             this.txtLado2.Enter += new System.EventHandler(this.Form1_Load);
             this.txtLado2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLado2_KeyDown);
             // 
             // txtLado3
             // 
+            this.txtLado3.Enabled = false;
             this.txtLado3.Location = new System.Drawing.Point(71, 309);
             this.txtLado3.Name = "txtLado3";
             this.txtLado3.Size = new System.Drawing.Size(100, 20);
             this.txtLado3.TabIndex = 20;
-            this.txtLado3.Visible = false;
+            this.txtLado3.EnabledChanged += new System.EventHandler(this.btnTriangulo_Click);
             this.txtLado3.TextChanged += new System.EventHandler(this.txtLado3_TextChanged);
-            this.txtLado3.VisibleChanged += new System.EventHandler(this.btnTriangulo_Click);
             this.txtLado3.Enter += new System.EventHandler(this.Form1_Load);
             this.txtLado3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLado3_KeyDown);
             // 

@@ -22,73 +22,82 @@ namespace FiguraGeometrica2
         {
 
         }
-
-
-        private void btnCirculo_Click(object sender, EventArgs e)
+        private void LimpiarInputs()
         {
-            txtRadio.Enabled = true;
-            //limpiar txt
-            txtResArea.Text = string.Empty; txtResPerimetro.Text = string.Empty;
+            txtResArea.Text = string.Empty;
+            txtResPerimetro.Text = string.Empty;
+            txtResAltura.Text = string.Empty;
             txtLadoC.Text = string.Empty;
             txtLado1.Text = string.Empty;
             txtLado2.Text = string.Empty;
             txtLado3.Text = string.Empty;
+            txtRadio.Text = string.Empty;
+        }
+        private void DeshabilitarTriangulo()
+        {
+            lblAltura.Visible = false;
+            txtResAltura.Visible = false;
+            lblLado1.Visible = false; txtLado1.Visible = false;
+            lblLado2.Visible = false; txtLado2.Visible = false;
+            lblLado3.Visible = false; txtLado3.Visible = false;
+        }
 
-            //lbl y txt de Circulo
-            lblRadio.Visible = true; txtRadio.Visible = true;
+        private void DesHabilitarCuadrado()
+        {
+            lblLadoC.Visible = false; txtLadoC.Visible = false;
+        }
 
-            //lbl y txt de otras figuras
-            txtLadoC.Enabled = false;
-            txtLado1.Enabled = false;
-            txtLado2.Enabled = false; txtLado3.Enabled = false;
+        private void DesHabilitarCirculo()
+        {
+            lblRadio.Visible = false;
+            txtRadio.Visible = false;
+        }
 
-            //lbl y txt de Altura
-            lblAltura.Visible = false; txtResAltura.Visible = false;
+        private void btnCirculo_Click(object sender, EventArgs e)
+        {
+            txtRadio.Visible = true;
+            lblRadio.Visible = true;
+            txtRadio.Enabled = true;
+            lblRadio.Enabled = true;
+            LimpiarInputs();
+            DeshabilitarTriangulo();
+            DesHabilitarCuadrado();
+            
 
         }
 
         private void btnCuadrado_Click(object sender, EventArgs e)
         {
+            txtLadoC.Visible = true;
+            lblLadoC.Visible = true;
             txtLadoC.Enabled = true;
-            //limpiar txt
-            txtResArea.Text = string.Empty;
-            txtResPerimetro.Text = string.Empty;
-            txtRadio.Text = string.Empty;
-            txtLado1.Text = string.Empty;
-            txtLado2.Text = string.Empty;
-            txtLado3.Text = string.Empty;
+            lblLadoC.Enabled = true;
+            LimpiarInputs();
+            DesHabilitarCirculo();
+            DeshabilitarTriangulo();
+        }
 
-            //lbl y txt de Cuadrado
-            lblLadoC.Visible = true; txtLadoC.Visible = true; txtLadoC.Enabled = true;
+        private void HabilitarTriangulo()
+        {
+            
+            lblLado1.Enabled = true; txtLado1.Enabled = true;
+            lblLado2.Enabled = true; txtLado2.Enabled = true;
+            lblLado3.Enabled = true; txtLado3.Enabled = true;
 
-            //lbl y txt de Altura
-            lblAltura.Visible = false; txtResAltura.Visible = false;
+            lblLado1.Visible = true; txtLado1.Visible = true;
+            lblLado2.Visible = true; txtLado2.Visible = true;
+            lblLado3.Visible = true; txtLado3.Visible = true;
 
-            //txt de otras figuras
-            txtRadio.Enabled = false; txtLado1.Enabled = false;
-            txtLado2.Enabled = false; txtLado3.Enabled = false;
+            lblAltura.Enabled = true; txtResAltura.Enabled = true;
+            lblAltura.Visible = true; txtResAltura.Visible = true;
         }
 
         private void btnTriangulo_Click(object sender, EventArgs e)
         {
-            //limpiar txt
-            txtResArea.Text = string.Empty;
-            txtResPerimetro.Text = string.Empty;
-            txtResAltura.Text = string.Empty;
-            txtLadoC.Text = string.Empty; 
-            txtRadio.Text = string.Empty;
-
-            //lbl y txt de Triangulo
-            lblLado1.Visible = true; txtLado1.Visible = true; 
-            txtLado1.Enabled = true; txtLado2.Enabled = true; txtLado3.Enabled = true;
-            lblLado2.Visible = true; txtLado2.Visible = true;
-            lblLado3.Visible = true; txtLado3.Visible = true;
-
-            //txt de otras figuras
-            txtRadio.Enabled = false; txtLadoC.Enabled = false;
-
-            //lbl y txt de Altura
-            lblAltura.Visible = true; txtResAltura.Visible = true;
+            LimpiarInputs();
+            HabilitarTriangulo();
+            DesHabilitarCirculo();
+            DesHabilitarCuadrado();
 
         }
 
