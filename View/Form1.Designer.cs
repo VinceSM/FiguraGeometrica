@@ -47,6 +47,11 @@
             this.txtLado1 = new System.Windows.Forms.TextBox();
             this.txtLado2 = new System.Windows.Forms.TextBox();
             this.txtLado3 = new System.Windows.Forms.TextBox();
+            this.btnPoligono = new System.Windows.Forms.Button();
+            this.lblLadoP = new System.Windows.Forms.Label();
+            this.txtLadoP = new System.Windows.Forms.TextBox();
+            this.txtCantidadP = new System.Windows.Forms.TextBox();
+            this.lblCantidadP = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCuadrado
@@ -124,7 +129,7 @@
             // txtRadio
             // 
             this.txtRadio.Enabled = false;
-            this.txtRadio.Location = new System.Drawing.Point(71, 201);
+            this.txtRadio.Location = new System.Drawing.Point(68, 201);
             this.txtRadio.Name = "txtRadio";
             this.txtRadio.Size = new System.Drawing.Size(100, 20);
             this.txtRadio.TabIndex = 7;
@@ -146,7 +151,7 @@
             // txtLadoC
             // 
             this.txtLadoC.Enabled = false;
-            this.txtLadoC.Location = new System.Drawing.Point(71, 167);
+            this.txtLadoC.Location = new System.Drawing.Point(68, 167);
             this.txtLadoC.Name = "txtLadoC";
             this.txtLadoC.Size = new System.Drawing.Size(100, 20);
             this.txtLadoC.TabIndex = 9;
@@ -186,7 +191,7 @@
             // 
             this.lblLado1.AutoSize = true;
             this.lblLado1.Enabled = false;
-            this.lblLado1.Location = new System.Drawing.Point(16, 247);
+            this.lblLado1.Location = new System.Drawing.Point(17, 247);
             this.lblLado1.Name = "lblLado1";
             this.lblLado1.Size = new System.Drawing.Size(45, 13);
             this.lblLado1.TabIndex = 15;
@@ -198,7 +203,7 @@
             // 
             this.lblLado2.AutoSize = true;
             this.lblLado2.Enabled = false;
-            this.lblLado2.Location = new System.Drawing.Point(16, 279);
+            this.lblLado2.Location = new System.Drawing.Point(197, 247);
             this.lblLado2.Name = "lblLado2";
             this.lblLado2.Size = new System.Drawing.Size(45, 13);
             this.lblLado2.TabIndex = 16;
@@ -210,7 +215,7 @@
             // 
             this.lblLado3.AutoSize = true;
             this.lblLado3.Enabled = false;
-            this.lblLado3.Location = new System.Drawing.Point(16, 309);
+            this.lblLado3.Location = new System.Drawing.Point(383, 247);
             this.lblLado3.Name = "lblLado3";
             this.lblLado3.Size = new System.Drawing.Size(45, 13);
             this.lblLado3.TabIndex = 17;
@@ -221,7 +226,7 @@
             // txtLado1
             // 
             this.txtLado1.Enabled = false;
-            this.txtLado1.Location = new System.Drawing.Point(71, 247);
+            this.txtLado1.Location = new System.Drawing.Point(68, 240);
             this.txtLado1.Name = "txtLado1";
             this.txtLado1.Size = new System.Drawing.Size(100, 20);
             this.txtLado1.TabIndex = 18;
@@ -233,7 +238,7 @@
             // txtLado2
             // 
             this.txtLado2.Enabled = false;
-            this.txtLado2.Location = new System.Drawing.Point(71, 279);
+            this.txtLado2.Location = new System.Drawing.Point(248, 240);
             this.txtLado2.Name = "txtLado2";
             this.txtLado2.Size = new System.Drawing.Size(100, 20);
             this.txtLado2.TabIndex = 19;
@@ -245,7 +250,7 @@
             // txtLado3
             // 
             this.txtLado3.Enabled = false;
-            this.txtLado3.Location = new System.Drawing.Point(71, 309);
+            this.txtLado3.Location = new System.Drawing.Point(434, 240);
             this.txtLado3.Name = "txtLado3";
             this.txtLado3.Size = new System.Drawing.Size(100, 20);
             this.txtLado3.TabIndex = 20;
@@ -254,9 +259,64 @@
             this.txtLado3.Enter += new System.EventHandler(this.Form1_Load);
             this.txtLado3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLado3_KeyDown);
             // 
+            // btnPoligono
+            // 
+            this.btnPoligono.Location = new System.Drawing.Point(13, 119);
+            this.btnPoligono.Name = "btnPoligono";
+            this.btnPoligono.Size = new System.Drawing.Size(112, 23);
+            this.btnPoligono.TabIndex = 21;
+            this.btnPoligono.Text = "Crear Poligono";
+            this.btnPoligono.UseVisualStyleBackColor = true;
+            this.btnPoligono.Click += new System.EventHandler(this.btnPoligono_Click);
+            // 
+            // lblLadoP
+            // 
+            this.lblLadoP.AutoSize = true;
+            this.lblLadoP.Enabled = false;
+            this.lblLadoP.Location = new System.Drawing.Point(16, 286);
+            this.lblLadoP.Name = "lblLadoP";
+            this.lblLadoP.Size = new System.Drawing.Size(46, 13);
+            this.lblLadoP.TabIndex = 22;
+            this.lblLadoP.Text = "LADO P";
+            // 
+            // txtLadoP
+            // 
+            this.txtLadoP.Enabled = false;
+            this.txtLadoP.Location = new System.Drawing.Point(68, 279);
+            this.txtLadoP.Name = "txtLadoP";
+            this.txtLadoP.Size = new System.Drawing.Size(100, 20);
+            this.txtLadoP.TabIndex = 23;
+            this.txtLadoP.TextChanged += new System.EventHandler(this.txtLadoP_TextChanged);
+            this.txtLadoP.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLadoP_KeyDown);
+            // 
+            // txtCantidadP
+            // 
+            this.txtCantidadP.Enabled = false;
+            this.txtCantidadP.Location = new System.Drawing.Point(265, 279);
+            this.txtCantidadP.Name = "txtCantidadP";
+            this.txtCantidadP.Size = new System.Drawing.Size(100, 20);
+            this.txtCantidadP.TabIndex = 24;
+            this.txtCantidadP.TextChanged += new System.EventHandler(this.txtCantidadP_TextChanged);
+            this.txtCantidadP.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCantidadP_KeyDown);
+            // 
+            // lblCantidadP
+            // 
+            this.lblCantidadP.AutoSize = true;
+            this.lblCantidadP.Enabled = false;
+            this.lblCantidadP.Location = new System.Drawing.Point(197, 286);
+            this.lblCantidadP.Name = "lblCantidadP";
+            this.lblCantidadP.Size = new System.Drawing.Size(62, 13);
+            this.lblCantidadP.TabIndex = 25;
+            this.lblCantidadP.Text = "CANTIDAD";
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(667, 398);
+            this.Controls.Add(this.lblCantidadP);
+            this.Controls.Add(this.txtCantidadP);
+            this.Controls.Add(this.txtLadoP);
+            this.Controls.Add(this.lblLadoP);
+            this.Controls.Add(this.btnPoligono);
             this.Controls.Add(this.txtLado3);
             this.Controls.Add(this.txtLado2);
             this.Controls.Add(this.txtLado1);
@@ -310,6 +370,11 @@
         private System.Windows.Forms.TextBox txtLado1;
         private System.Windows.Forms.TextBox txtLado2;
         private System.Windows.Forms.TextBox txtLado3;
+        private System.Windows.Forms.Button btnPoligono;
+        private System.Windows.Forms.Label lblLadoP;
+        private System.Windows.Forms.TextBox txtLadoP;
+        private System.Windows.Forms.TextBox txtCantidadP;
+        private System.Windows.Forms.Label lblCantidadP;
     }
 }
 

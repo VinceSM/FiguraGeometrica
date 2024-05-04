@@ -49,6 +49,7 @@
     <Compile Include="Interface\IFigura.cs" />
     <Compile Include="Model\Circulo.cs" />
     <Compile Include="Model\Cuadrado.cs" />
+    <Compile Include="Model\Poligono.cs" />
     <Compile Include="Model\Triangulo.cs" />
     <Compile Include="View\Form1.cs">
       <SubType>Form</SubType>
